@@ -175,7 +175,8 @@ max(25, 10);
 let name1;
 function hello (name1) {
     let date = new Date(),
-    h = date.getHours(),
+    h = date.getHours();
+    console.log(h);
     switch (h) {
         case 6:
         case 7:
@@ -184,7 +185,7 @@ function hello (name1) {
         case 10:
         case 11:
         case 12:
-          console.log('Доброе утро ' + ${name1});
+          console.log('Доброе утро'  + name1);
           break;
         case 13:
         case 14:
@@ -192,14 +193,14 @@ function hello (name1) {
         case 16:
         case 17:
         case 18:
-          console.log('Добрый день ' + ${name1});
+          console.log('Добрый день ' + name1);
           break;
         case 19:
         case 20:
         case 21: 
         case 22:
         case 23:
-          console.log('Добрый вечер ' + ${name1});
+          console.log('Добрый вечер ' +  name1);
           break;
           case 6:
         case 24:
@@ -208,7 +209,7 @@ function hello (name1) {
         case 3:
         case 4:
         case 5:
-            console.log('Доброй ночи ' +  ${name1});
+            console.log('Доброй ночи ' + name1);
             break;
     }
 }
